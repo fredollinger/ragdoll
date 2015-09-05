@@ -2,18 +2,20 @@ package com.fredollinger;
 
 import javax.swing.*;
 import javax.swing.event.*;
-
 import java.awt.*;
 import java.awt.Event.*;
+import java.awt.image.BufferedImage;
  
 class RagCanvas extends Canvas {
 
-	public RagDoll doll = new RagDoll();
+     public RagDoll doll = new RagDoll();
 
-	public void paint(Graphics g){
-	    Graphics2D g2 = (Graphics2D) g;
-	    g2.fillRect(100, 100, 100, 100);
-	    return;
-	}
+     public void paint(Graphics g){
+	BufferedImage image = new BufferedImage(100, 100, BufferedImage.TYPE_BYTE_INDEXED);
+        doll.render(image);
+	g.drawImage(image, 100, 100, null);
+	System.out.println("RagCanvas::paint()");
+        return;
+     } // end paint()
 
-} // END class AttributeWindow
+} // END class RagCanvas

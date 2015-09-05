@@ -6,6 +6,7 @@ all:
 	$(JAVAC) $(JAVA_FILES)
 	mkdir -p com/fredollinger
 	mv *.class com/fredollinger
+	zenity --info
 
 test:
 	java -cp . com/fredollinger/$(APP)
