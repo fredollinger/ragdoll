@@ -1,6 +1,6 @@
 APP=RagDollApp
 JAVAC=/opt/java/bin/javac
-JAVA_FILES= $(APP).java RagWindow.java RagCanvas.java
+JAVA_FILES = *.java
 
 all:
 	$(JAVAC) $(JAVA_FILES)
