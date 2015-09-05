@@ -7,4 +7,11 @@ import java.awt.*;
 import java.awt.Event.*;
  
 class RagCanvas extends Canvas {
+
+	public void paint(Graphics g){
+	    Graphics2D g2 = (Graphics2D) g;
+	    g2.fillRect(100, 100, 100, 100);
+	    return;
+	}
+
 } // END class AttributeWindow

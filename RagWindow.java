@@ -13,7 +13,7 @@ class RagWindow extends JFrame {
 
 	JFrame frame = new JFrame( "Hello, Java" );
 	frame.add(canvas);
-	frame.setSize( 600, 600 );
+	frame.setSize( 600, 400 );
 	frame.setVisible( true );
-    }
-} // END class AttributeWindow
+    } // END RagWindow()
+} // END class RagWindow
