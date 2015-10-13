@@ -1,5 +1,6 @@
 APP=RagDollApp
 JAVAC=/opt/java/bin/javac
+#JAVAC=/usr/bin/javac
 JAVA_FILES = *.java
 
 all:

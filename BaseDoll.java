@@ -5,7 +5,7 @@ package com.fredollinger;
 
 class BaseDoll extends Object {
     public int x, y;
-    protected int w, h;
+    protected int w, h, gap;
 
     public int getHeight(){
         return h;
