@@ -16,7 +16,7 @@ class RagDoll extends BaseDoll {
 
     public void render(BufferedImage img){
 	Graphics2D g2 = img.createGraphics();
-	image.createGraphics().setColor(Color.Black);
+	//image.createGraphics().setColor(Color.Black);
 	g2.fillRect(0, 0, w, h);
 	g2.fillRect(0, 0+h+gap, w, h);
 	System.out.println(x);
