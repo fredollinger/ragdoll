@@ -20,19 +20,30 @@ class RagDoll extends BaseDoll {
 	//g2.fillRect(0, 0, w, h);
 	//g2.fillRect(0, 0+h+gap, w, h);
 	System.out.println(x);
+        //RagNode node1 = new RagNode(0, 0, 15, 10);
 
-        RagNode node1 = new RagNode(0, 0, 15, 10);
+        RagNode head = new RagNode(0, 30, 15, 10);
 
-        RagNode node2 = new RagNode(0, 30, 15, 10);
+        RagNode chest = new RagNode(30, 0, 15, 10);
 
-        RagNode node3 = new RagNode(30, 0, 15, 10);
+        RagNode lshoulder = new RagNode(30, 30, 15, 10);
+        RagNode lelbow = new RagNode(30, 60, 15, 10);
+        RagNode lhand = new RagNode(30, 90, 15, 10);
 
-        RagNode node4 = new RagNode(30, 30, 15, 10);
+        RagNode rshoulder = new RagNode(90, 30, 15, 10);
+        RagNode relbow = new RagNode(90, 60, 15, 10);
+        RagNode rhand = new RagNode(90, 90, 15, 10);
 
-	node1.render(g2);
-	node2.render(g2);
-	node3.render(g2);
-	node4.render(g2);
+	head.render(g2);
+	chest.render(g2);
+	lshoulder.render(g2);
+	lelbow.render(g2);
+	lhand.render(g2);
+
+	rshoulder.render(g2);
+	relbow.render(g2);
+	rhand.render(g2);
+
         //RagNode node2 = new RagNode();
     } // end paint()
 
