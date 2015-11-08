@@ -1,5 +1,6 @@
 APP=RagDollApp
 JAVAC=/opt/java/bin/javac
+JAVA=/opt/java/bin/java
 #JAVAC=/usr/bin/javac
 JAVA_FILES = *.java
 
@@ -10,7 +11,7 @@ all:
 	zenity --info
 
 test:
-	java -cp . com/fredollinger/$(APP)
+	$(JAVA) -cp . com/fredollinger/$(APP)
 
 clean:
 	rm -rvf com/fredollinger
